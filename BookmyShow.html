@@ -1,0 +1,1140 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BookMyShow Header</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            font-family: sans-serif;
+            background: whitesmoke;
+        }
+        .container-fluid {
+            padding-left: 60px;
+            padding-right: 60px;
+        }
+        .search-box {
+            position: relative;
+            width: 600px;
+        }
+        .search-box input {
+            width: 100%;
+            height: 38px;
+            padding-left: 40px;
+            font-size: 14px;
+            border-radius: 3px !important;
+            border: 1px solid #ccc;
+        }
+        .search-box input:focus {
+            outline: none;
+            box-shadow: none;
+            border: 1px solid #ccc;
+        }
+        .search-box i {
+            position: absolute;
+            top: 50%;
+            left: 12px;
+            transform: translateY(-50%);
+            color: #888;
+            font-size: 14px;
+        }
+        select {
+            border: none;
+            outline: none;
+        }
+        .btn-danger {
+            padding: 3px 12px;
+            font-size: 14px;
+            font-weight: 400;
+        }
+        .menu-icon {
+            font-size: 20px;
+            margin-left: 10px;
+        }
+        @media (max-width: 576px) {
+            .container-fluid {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            .search-box {
+                width: 100%;
+                margin: 10px;
+            }
+            .right-section {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+                width: 100%;
+            }
+        }
+        .second-navbar {
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .movie-img {
+            width: 100%;
+            height: 420px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+    .event-img {
+      height: 220px;
+      width: 100%;
+      object-fit: cover;
+    }
+     body {
+    background-color: #f2f2f2; 
+    margin: 0;
+    padding: 0;
+  }
+  .section-padding {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+  .premiere-section {
+      background-color: #2b3148;
+      color: white;
+    }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md bg-white">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/75/Bookmyshow-logoid.png" width="120"
+                    height="50" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between align-items-center"
+                id="navbarSupportedContent">
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="search" placeholder="Search for Movies, Events, Plays, Sports and Activities">
+                </div>
+                <div class="d-flex align-items-center gap-3 right-section">
+                    <select>
+                        <option>Hyderabad</option>
+                        <option>Chennai</option>
+                        <option>Bangalore</option>
+                    </select>
+                    <button class="btn btn-danger w-100">Sign in</button>
+                    <i class="fa-solid fa-bars menu-icon"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <nav class="bg-light px-4 px-md-5 py-2 second-navbar">
+        <div class="d-flex flex-wrap justify-content-between align-items-center">
+            <div class="d-flex gap-3 small">
+                <a href="#" class="text-dark text-decoration-none">Movies</a>
+                <a href="#" class="text-dark text-decoration-none">Stream</a>
+                <a href="#" class="text-dark text-decoration-none">Events</a>
+                <a href="#" class="text-dark text-decoration-none">Plays</a>
+                <a href="#" class="text-dark text-decoration-none">Sports</a>
+                <a href="#" class="text-dark text-decoration-none">Activities</a>
+                <a href="#" class="text-dark text-decoration-none">TATA IPL 2026</a>
+            </div>
+            <div class="d-flex gap-3 small mt-2 mt-md-8">
+                <a href="#" class="text-dark text-decoration-none">List YourShow</a>
+                <a href="#" class="text-dark text-decoration-none">Corporates</a>
+                <a href="#" class="text-dark text-decoration-none">Offers</a>
+                <a href="#" class="text-dark text-decoration-none">Gift Cards</a>
+            </div>
+        </div>
+    </nav>
+    <div class="bg-light py-3 mt-0">
+        <div class="container-fluid px-2 px-md-4">
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner rounded-3 overflow-hidden">
+                    <div class="carousel-item active">
+                        <img src="https://assets-in-gm.bmscdn.com/promotions/cms/creatives/1773907348050_copyofwebbanner.jpg"
+                            class="d-block w-100" alt="">
+                    </div>
+                    <div class="carousel-item active">
+                        <img src="https://assets-in-gm.bmscdn.com/promotions/cms/creatives/1774849810148_lblueweb.jpg"
+                            class="d-block w-100" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://assets-in-gm.bmscdn.com/promotions/cms/creatives/1775133470293_bmsk2djsallsizes1240x300hyderabad.jpg"
+                            class="d-block w-100" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://assets-in-gm.bmscdn.com/promotions/cms/creatives/1772444343674_themessiexperienceindiawebshowcase1240x300bengluru.jpg"
+                            class="d-block w-100" alt="">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid px-5 mt-3">
+        <div class="row align-items-center mb-3">
+            <div class="col-6">
+                <h4 class="mb-0">Recommended Movies</h4>
+            </div>
+            <div class="col-6 text-end">
+                <a href="#" class="text-danger text-decoration-none">See All &gt;</a>
+            </div>
+        </div>
+        <div id="movieCarousel" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row row-cols-2 row-cols-md-5 g-4"">
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OS4yLzEwICA2LjFLKyBWb3Rlcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00469257-pxpkszfkma-portrait.jpg"
+                                class="img-fluid rounded-3">
+                            <div class="mt-3 fs-6 fw-bold">Biker</div>
+                            <div class="text-muted small fs-6">Action/Drama/Romantic/Sport
+                                <br>s
+                                </div>
+                        </div>
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OS40LzEwICA1MDNLKyBWb3Rlcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00478890-gseacbrsej-portrait.jpg"
+                                class="img-fluid rounded-3">
+                                 <div class="mt-3 fs-6 fw-bold">Dhurandhar The Revenge</div>
+                            <div class="text-muted small fs-6">Action/Thriller</div>
+                        </div>
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OC43LzEwICA0LjhLKyBWb3Rlcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00492361-bazyfqglxg-portrait.jpg"
+                                class="img-fluid rounded-3">
+                               <div class="mt-3 fs-6 fw-bold">Raakaasa</div>
+                            <div class="text-muted small fs-6">Comedy/Fantasy/Thiller</div> 
+                        </div>
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OS8xMCAgMzguNUsrIFZvdGVz,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00451760-bqrmlwxxqs-portrait.jpg"
+                                class="img-fluid rounded-3">
+                                <div class="mt-3 fs-6 fw-bold">Project Hail Mary</div>
+                            <div class="text-muted small fs-6">Adventure/Drama/Sci-Fi</div>
+                        </div>
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OC42LzEwICAxSysgVm90ZXM%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00465655-vffexhbjnc-portrait.jpg"
+                                class="img-fluid rounded-3">
+                                <div class="mt-3 fs-6 fw-bold">The Super Mario Galaxy Movie</div>
+                            <div class="text-muted small fs-6">Adventure/Animation/Comedy
+                                <br>/Family Fantasy
+                            </div>      
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row row-cols-2 row-cols-md-5 g-4">
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OS42LzEwICA0LjhLKyBWb3Rlcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00492178-kubmczhfyw-portrait.jpg"
+                                class="img-fluid rounded-3">
+                                <div class="mt-3 fs-6 fw-bold">Youth</div>
+                            <div class="text-muted small fs-6">Comedy/Drama/Romantic                           
+                            </div>
+                        </div>
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OS4yLzEwICAzLjZLKyBWb3Rlcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00463388-bbjnqlxsgr-portrait.jpg"
+                                class="img-fluid rounded-3">
+                                <div class="mt-3 fs-6 fw-bold">Band Melam</div>
+                            <div class="text-muted small fs-6">Drama/Romantic    
+                            </div>
+                        </div>
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OC4zLzEwICAyNjArIFZvdGVz,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00486452-zbktvajhmv-portrait.jpg"
+                                class="img-fluid rounded-3">
+                                <div class="mt-3 fs-6 fw-bold">Ready or Not2: Here I 
+                                    <br>Come
+                                </div>
+                            <div class="text-muted small fs-6">Comedy/Horror/Mystery    
+                            </div>
+                        </div>
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@like_202006280402.png,lx-24,ly-617,w-29,l-end:l-text,ie-MTguMUsrIExpa2Vz,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00486484-twydaqhfmj-portrait.jpg"
+                                class="img-fluid rounded-3">
+                                <div class="mt-3 fs-6 fw-bold">The Drama</div>
+                            <div class="text-muted small fs-6">Comedy/Drama/Romantic
+                            </div>
+                        </div>
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OS42LzEwICAyNy45SysgVm90ZXM%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00493207-dltagqvepy-portrait.jpg"
+                                class="img-fluid rounded-3">
+                                <div class="mt-3 fs-6 fw-bold">Vaazha 2: Biopic of a 
+                                    <br>Billion Bros
+                                </div>
+                            <div class="text-muted small fs-6">Action/Comedy/Drama/Family             
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#movieCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#movieCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+  <div class="container-fluid px-5 pt-5 pb-4">
+  <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-1440,h-120/stream-leadin-web-collection-202210241242.png"
+       class="img-fluid w-100 rounded-3">
+</div>
+<div class="container-fluid px-5 my-5">
+  <div class="d-flex justify-content-between align-items-center mb-3">
+    <h4 class="mb-0">The Best Of Live Events</h4>
+  </div>
+  <div id="liveEventsCarousel" class="carousel slide" data-bs-ride="false">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="row row-cols-2 row-cols-md-5 g-4"">
+          <div class="col">
+            <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/music-shows-collection-202211140440.png"
+              class="img-fluid rounded-3 shadow-sm event-img">
+          </div>
+          <div class="col">
+            <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/arts-crafts-collection-202211140440.png"
+              class="img-fluid rounded-3 shadow-sm event-img">
+          </div>
+          <div class="col">
+            <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/workshop-and-more-web-collection-202211140440.png"
+              class="img-fluid rounded-3 shadow-sm event-img">
+          </div>
+          <div class="col">
+            <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/interactive-games-collection-202211140440.png"
+              class="img-fluid rounded-3 shadow-sm event-img">
+          </div>
+          <div class="col">
+            <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/upskill-collection-202211140440.png"
+              class="img-fluid rounded-3 shadow-sm event-img">
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row row-cols-2 row-cols-md-5 g-4"">
+          <div class="col">
+            <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-NzUrIEV2ZW50cw%3D%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/comedy-shows-collection-202211140440.png"
+              class="img-fluid rounded-3 shadow-sm event-img">
+          </div>
+          <div class="col">
+            <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-MTArIEV2ZW50cw%3D%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/amusement-parks-banner-desktop-collection-202503251132.png"
+              class="img-fluid rounded-3 shadow-sm event-img">
+          </div>
+          <div class="col">
+            <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-MTAgRXZlbnRz,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/theatre-shows-collection-202211140440.png"
+              class="img-fluid rounded-3 shadow-sm event-img">
+          </div>
+          <div class="col">
+            <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-MTArIEV2ZW50cw%3D%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/kids-banner-desktop-collection-202503251132.png"
+              class="img-fluid rounded-3 shadow-sm event-img">
+          </div>
+          <div class="col">
+            <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-NiBFdmVudHM%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/adventure-fun-collection-202211140440.png"
+              class="img-fluid rounded-3 shadow-sm event-img">
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#liveEventsCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#liveEventsCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</div>
+<div class="container-fluid premiere-section px-5 py-4">
+  <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-1440,h-120/premiere-banner-web-collection-202208191200.png"
+       class="img-fluid w-100 rounded-2">
+</div>
+<div class="container-fluid premiere-section px-5 py-4">
+  <div class="row align-items-center mb-3">
+    <div class="col-6">
+      <h4 class="mb-0 text-white">Premieres</h4>
+      <h6 class="text-white-50">Brand new releases every Friday</h6>
+    </div>
+    <div class="col-6 text-end">
+      <a href="#" class="text-danger text-decoration-none">See All &gt;</a>
+    </div>
+  </div>
+  <div id="premiereCarousel" class="carousel slide" data-bs-ride="false">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="row row-cols-2 row-cols-md-5 g-4">
+          <div class="col">
+            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/et00492183-xnbjptklsb-portrait.jpg" class="img-fluid rounded-3">
+            <div class="mt-2 movie-title">La Unidad</div>
+            <div class="movie-lang">Spanish</div>
+          </div>
+          <div class="col">
+            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/et00335973-vvdwhvseqs-portrait.jpg" class="img-fluid rounded-3">
+            <div class="mt-2 movie-title">Vikipedia</div>
+            <div class="movie-lang">Kannada</div>
+          </div>
+          <div class="col">
+            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/et00469394-huezvfdply-portrait.jpg" class="img-fluid rounded-3">
+            <div class="mt-2 movie-title">Goat</div>
+            <div class="movie-lang">English</div>
+          </div>
+          <div class="col">
+            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/et00493707-gagyycawgw-portrait.jpg" class="img-fluid rounded-3">
+            <div class="mt-2 movie-title">F Marry Kill</div>
+            <div class="movie-lang">English</div>
+          </div>
+          <div class="col">
+            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/et00484973-asnhkhjkuv-portrait.jpg" class="img-fluid rounded-3">
+            <div class="mt-2 movie-title">The Strangers</div>
+            <div class="movie-lang">English</div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row row-cols-2 row-cols-md-5 g-4">
+          <div class="col">
+            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/et00461098-mpzypkygpq-portrait.jpg" class="img-fluid rounded-3">
+            <div class="mt-2 movie-title">Wondering Heights</div>
+            <div class="movie-lang">English</div>
+          </div>
+          <div class="col">
+            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/et00480016-epbtntqzjn-portrait.jpg" class="img-fluid rounded-3">
+            <div class="mt-2 movie-title">Kryptic</div>
+            <div class="movie-lang">English</div>
+          </div>
+          <div class="col">
+            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/et00481740-zxwzabnhcb-portrait.jpg" class="img-fluid rounded-3">
+            <div class="mt-2 movie-title">Rogue Agent</div>
+            <div class="movie-lang">English</div>
+          </div>
+          <div class="col">
+            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/et00493846-rflfafsazt-portrait.jpg" class="img-fluid rounded-3">
+            <div class="mt-2 movie-title">One Mile</div>
+            <div class="movie-lang">English</div>
+          </div>
+          <div class="col">
+            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/et00460568-jbcqmvuxep-portrait.jpg" class="img-fluid rounded-3">
+            <div class="mt-2 movie-title">Marty Supreme</div>
+            <div class="movie-lang">English</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#premiereCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#premiereCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</div>
+<div class="container-fluid px-5 my-5">
+        <div class="row align-items-center mb-3">
+            <div class="col-6">
+                <h4 class="mb-0">Your Music Studio</h4>
+            </div>
+            <div class="col-6 text-end">
+                <a href="#" class="text-danger text-decoration-none">See All &gt;</a>
+            </div>
+        </div>
+        <div id="musicCarousel" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row row-cols-2 row-cols-md-5 g-4"">
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAxMSBBcHI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00494114-fnecedzzls-portrait.jpg"
+                                class="img-fluid rounded-3">
+                            <div class="mt-3 fs-6 fw-bold">Main stage Arjun Rampal <br/> Live at Quake Arena</div>
+                            <div class="text-muted small fs-6">Quake Arena: Hyderabad
+                                <br>Club Gigs
+                                </div></div>
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAyIE1heQ%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00493830-fwzvurgxpe-portrait.jpg"
+                                class="img-fluid rounded-3">
+                                 <div class="mt-3 fs-6 fw-bold">SPB CHARAN LIVE</div>
+                            <div class="text-muted small fs-6">Odeum By Prism: Hyderabad <br/>Club Gigs</div>
+                        </div>
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAxMiBBcHI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00492181-edqexrtwqd-portrait.jpg"
+                                class="img-fluid rounded-3">
+                               <div class="mt-3 fs-6 fw-bold">Jim Beam Jams</div>
+                            <div class="text-muted small fs-6">One Golf: Hyderabad <br/>Concerts</div> 
+                        </div>
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OS8xMCAgMzguNUsrIFZvdGVz,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00451760-bqrmlwxxqs-portrait.jpg"
+                                class="img-fluid rounded-3">
+                                <div class="mt-3 fs-6 fw-bold">MAKKA BAND at ODEUM<br/> BY PRISM</div>
+                            <div class="text-muted small fs-6">Odeum By Prism: Hyderabad <br/> Club Gigs</div>
+                        </div>
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAyNyBKdW4%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00493425-ghglylttlu-portrait.jpg"
+                                class="img-fluid rounded-3">
+                                <div class="mt-3 fs-6 fw-bold">Abhangawari by Rahul<br/>Deshpande(Hyderabad)</div>
+                            <div class="text-muted small fs-6">Shilpakala Vedika: Hyderabad
+                                <br>Concerts
+                            </div>      
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row row-cols-2 row-cols-md-5 g-4">
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAxMSBBcHI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00492339-egxdzdhfqp-portrait.jpg"
+                                class="img-fluid rounded-3">
+                                <div class="mt-3 fs-6 fw-bold">Bhajan Jam: Carnatic 2.0<br/> Ft. Uthara Unnikrishnan</div>
+                            <div class="text-muted small fs-6">Vana convention: hyderabad<br/> Concerts                        
+                            </div>
+                        </div>
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAxOSBBcHI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00438419-rtcmvccgbp-portrait.jpg"
+                                class="img-fluid rounded-3">
+                                <div class="mt-3 fs-6 fw-bold">Bhuwin Experience-noor-<br/>e-daastaan</div>
+                            <div class="text-muted small fs-6">Shilpakala Vedika:Hyderabad <br/> Concerts  
+                            </div>
+                        </div>
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAxMSBBcHI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00492982-pcedtelqdd-portrait.jpg"
+                                class="img-fluid rounded-3">
+                                <div class="mt-3 fs-6 fw-bold">Bollywood icon Abhay Deol 
+                                    <br>at Kingdome
+                                </div>
+                            <div class="text-muted small fs-6">Kingdome Klub and KItchen: <br/>Hyderabad<br/>Club Gigs 
+                            </div>
+                        </div>
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAxOSBBcHI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00493517-cjnewzcvxy-portrait.jpg"
+                                class="img-fluid rounded-3">
+                                <div class="mt-3 fs-6 fw-bold">Electric Soul ft.Leenus <br/>Livingstone & Krish Sai</div>
+                            <div class="text-muted small fs-6">Hard Rock Cafe Hitech City<br/>Hyderabad<br/>Club Glgs
+                            </div>
+                        </div>
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-VHVlLCAxNCBBcHIgb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00488227-dvxvddtdxg-portrait.jpg"
+                                class="img-fluid rounded-3">
+                                <div class="mt-3 fs-6 fw-bold">Mrp Night-A Live Music 
+                                    <br>Series Ft Nupur & Joshua
+                                </div>
+                            <div class="text-muted small fs-6">Hard Rock Cafe Hitech CITY:<br/> Hyderabad <br/> Club Gigs            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#musicCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#musicCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+   <div class="container-fluid px-5 my-5">
+        <div class="row align-items-center mb-3">
+            <div class="col-6">
+                <h4 class="mb-0">Outdoor Events</h4>
+            </div>
+            <div class="col-6 text-end">
+                <a href="#" class="text-danger text-decoration-none">See All &gt;</a>
+            </div>
+        </div>
+        <div id="outdoorCarousel" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row row-cols-2 row-cols-md-5 g-4"">
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-TW9uLCA2IEFwciBvbndhcmRz,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end:l-text,ie-UFJPTU9URUQ%3D,co-FFFFFF,bg-DC354B,ff-Roboto,fs-20,lx-N16,ly-12,lfo-top_right,pa-12_14_12_14,r-6,l-end/et00343461-nkbrwupxrv-portrait.jpg"
+                                class="img-fluid rounded-3">
+                            <div class="mt-3 fs-6 fw-bold">Snow Kinngdom Hyderabad</div>
+                            <div class="text-muted small fs-6">Snow Kingdom:Hyderabad
+                                </div>
+                        </div>
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAxMSBBcHI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end:l-text,ie-UFJPTU9URUQ%3D,co-FFFFFF,bg-DC354B,ff-Roboto,fs-20,lx-N16,ly-12,lfo-top_right,pa-12_14_12_14,r-6,l-end/et00473415-xrzeuwbzms-portrait.jpg"
+                                class="img-fluid rounded-3">
+                                 <div class="mt-3 fs-6 fw-bold">OVERSRAMTGIRI by Aditya
+                                    <br>Gundeti
+                                 </div>
+                            <div class="text-muted small fs-6">The Comedy Theatre:
+                                <br>Hyderabad.
+                            </div>
+                        </div>
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAyMyBNYXk%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00413352-amfneplgvy-portrait.jpg"
+                                class="img-fluid rounded-3">
+                               <div class="mt-3 fs-6 fw-bold">Rajkumari by Nayab Midha</div>
+                            <div class="text-muted small fs-6">Bharatiya Vidya Bhavan's <br><Auditorium:Hyderabad></Auditorium:Hyderabad></div> 
+                        </div>
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAxMCBNYXk%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00492146-ytmdcjnpdt-portrait.jpg""
+                                class="img-fluid rounded-3">
+                                <div class="mt-3 fs-6 fw-bold">NTR TRUST THALASSEMA <br>RUN</div>
+                            <div class="text-muted small fs-6">Jalavihar Water <Park:br>Hyderabad</div>
+                        </div>
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-TW9uLCA2IEFwciBvbndhcmRz,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00487678-kdmdyrryxd-portrait.jpg"
+                                class="img-fluid rounded-3">
+                                <div class="mt-3 fs-6 fw-bold">Paradox Museum
+                                    <br>Hyderabad
+                                </div>
+                            <div class="text-muted small fs-6">Paradox Museum:Hyderabad
+                            </div>      
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row row-cols-2 row-cols-md-5 g-4">
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-RnJpLCAxMCBBcHIgb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00321093-rachhfcgzl-portrait.jpg"
+                                class="img-fluid rounded-3">
+                                <div class="mt-3 fs-6 fw-bold">Rambo Circus- Hyderabad</div>
+                            <div class="text-muted small fs-6">Sri Sathya Sai Nigamagamam <br>Auditorium                          
+                            </div>
+                        </div>
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-TW9uLCA2IEFwciBvbndhcmRz,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00402180-sgetdyspyv-portrait.jpg"
+                                class="img-fluid rounded-3">
+                                <div class="mt-3 fs-6 fw-bold">Ramoji Film City Hyderabad</div>
+                            <div class="text-muted small fs-6">Ramoji Film City:Hyderabad
+                            </div>
+                        </div>
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-TW9uLCA2IEFwciBvbndhcmRz,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00063786-hhwaetxaja-portrait.jpg"
+                                class="img-fluid rounded-3">
+                                <div class="mt-3 fs-6 fw-bold">Wonderla Amusement Park
+                                    <br>Hyderabad
+                                </div>
+                            <div class="text-muted small fs-6">Wonderla Amusement Park <br>Hyderabad 
+                            </div>
+                        </div>
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-TW9uLCA2IEFwciBvbndhcmRz,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00403515-qqjsdesckh-portrait.jpg"
+                                class="img-fluid rounded-3">
+                                <div class="mt-3 fs-6 fw-bold">Wild Waters Amusement & <br>Water Theme Park...</div>
+                            <div class="text-muted small fs-6">Wild Waters-Water & <br>Amusement Theme...
+                            </div>
+                        </div>
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAyMyBNYXkgb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00489924-nwpyksgqyr-portrait.jpg"
+                                class="img-fluid rounded-3">
+                                <div class="mt-3 fs-6 fw-bold">GIANT LIGHT PUPPET
+                                    <br>SHOW
+                                </div>
+                            <div class="text-muted small fs-6">Shilpakala Vedika:Hyderabad             
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#outdoorCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#outdoorCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div> 
+    <div class="container-fluid px-5 my-5">
+        <div class="row align-items-center mb-3">
+            <div class="col-6">
+                <h4 class="mb-0">Laughter Therapy</h4>
+            </div>
+            <div class="col-6 text-end">
+                <a href="#" class="text-danger text-decoration-none">See All &gt;</a>
+            </div>
+        </div>
+        <div id="laughterCarousel" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row row-cols-2 row-cols-md-5 g-4"">
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAxMSBBcHI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end:l-text,ie-UFJPTU9URUQ%3D,co-FFFFFF,bg-DC354B,ff-Roboto,fs-20,lx-N16,ly-12,lfo-top_right,pa-12_14_12_14,r-6,l-end/et00473415-xrzeuwbzms-portrait.jpg"
+                                class="img-fluid rounded-3">
+                            <div class="mt-3 fs-6 fw-bold">OVERSMARTGIRI by Aditya <br>Gundeti</div>
+                            <div class="text-muted small fs-6">The Comedy: <br>Hyderabad
+                                </div>
+                        </div>
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAxMCBNYXk%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00415541-ubynhhfmyn-portrait.jpg"
+                                class="img-fluid rounded-3">
+                                 <div class="mt-3 fs-6 fw-bold">Inventions by Biswa Kalyan
+                                    <br>Rath
+                                 </div>
+                            <div class="text-muted small fs-6">Shilpakala Vedika:Hyderabad
+                            </div>
+                        </div>
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAzIE1heQ%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00480918-aqdeqavuxg-portrait.jpg"
+                                class="img-fluid rounded-3">
+                               <div class="mt-3 fs-6 fw-bold">Tempo Tantrums-Kenny
+                                <br>Sebastion(Comedy Show)
+                               </div>
+                            <div class="text-muted small fs-6">Shilpakala Vedika:Hyderabad</div> 
+                        </div>
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAxMiBBcHI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00477805-kllxrgsfkn-portrait.jpg"
+                                class="img-fluid rounded-3">
+                                <div class="mt-3 fs-6 fw-bold">Sanity in Diversity ft.Vivek<br>Muralidharan</div>
+                            <div class="text-muted small fs-6">Aaromale-Cafe and Creative <br>Community:Hyderabad</div>
+                        </div>
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAxNyBNYXk%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00358468-alrplkxdhe-portrait.jpg"
+                                class="img-fluid rounded-3">
+                                <div class="mt-3 fs-6 fw-bold">Gaurav Gupta Live-India
+                                    <br>Tour
+                                </div>
+                            <div class="text-muted small fs-6">Shilpakala Vedika:Hyderabad
+                            </div>      
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row row-cols-2 row-cols-md-5 g-4">
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-VGh1LCA5IEFwcg%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00483912-rubwujhfjt-portrait.jpg"  class="img-fluid rounded-3">
+                                <div class="mt-3 fs-6 fw-bold">Bahu Knows Best-A <br>Concept Show by Apeksha</div>
+                            <div class="text-muted small fs-6">The Comedy Theratre:
+                                 <br>Hyderabad                       
+                            </div>
+                        </div>
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAxNyBNYXk%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00492711-suhfrdyknx-portrait.jpg"
+                                class="img-fluid rounded-3">
+                                <div class="mt-3 fs-6 fw-bold">Spoiler Alert,a standup 
+                                <br>comedy solo by Anshu Mor</div>
+                            <div class="text-muted small fs-6">District 150:Hyderabad
+                            </div>
+                        </div>
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-TW9uLCAxMyBBcHI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00389899-auazaxsbcm-portrait.jpg"
+                                class="img-fluid rounded-3">
+                                <div class="mt-3 fs-6 fw-bold">Saikiran-Rolling New
+                                    <br>Jokes
+                                </div>
+                            <div class="text-muted small fs-6">Aaromale-Cafe and Creative<br>Community:Hyderabad
+                            </div>
+                        </div>
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-VHVlLCA3IEFwciBvbndhcmRz,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00435086-bsznypfqlf-portrait.jpg"
+                             class="img-fluid rounded-3">
+                              <div class="mt-3 fs-6 fw-bold">Telugu Clean Comedy
+                             <br>Night
+                                </div>
+                            <div class="text-muted small fs-6">The Street Comedy Club:
+                                <br> Hyderabad
+                            </div>
+                        </div>
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-TW9uLCA2IEFwciBvbndhcmRz,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00414970-kydzkyswwa-portrait.jpg"
+                                class="img-fluid rounded-3">
+                                <div class="mt-3 fs-6 fw-bold">Telugu Standup
+                                    <br>@Hyderabad
+                                </div>
+                            <div class="text-muted small fs-6">The Street Comedy Club:<br>Hyderabad           
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#laughterCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#laughterCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div> 
+    <div class="container-fluid px-5 my-5">
+        <div class="row align-items-center mb-3">
+            <div class="col-6">
+                <h4 class="mb-0">Popular Events</h4>
+            </div>
+            <div class="col-6 text-end">
+                <a href="#" class="text-danger text-decoration-none">See All &gt;</a>
+            </div>
+        </div>
+        <div id="popularCarousel" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row row-cols-2 row-cols-md-5 g-4">
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-RnJpLCAxMCBBcHIgb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end:l-text,ie-UFJPTU9URUQ%3D,co-FFFFFF,bg-DC354B,ff-Roboto,fs-20,lx-N16,ly-12,lfo-top_right,pa-12_14_12_14,r-6,l-end/et00321093-rachhfcgzl-portrait.jpg"
+                                class="img-fluid rounded-3">
+                            <div class="mt-3 fs-6 fw-bold">Rambo Circus - Hyderabad </div>
+                            <div class="text-muted small fs-6">Sri Sathya Sai Nigamagamam
+                                <br>Auditorium
+                                </div>
+                        </div>
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAxMSBBcHI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end:l-text,ie-UFJPTU9URUQ%3D,co-FFFFFF,bg-DC354B,ff-Roboto,fs-20,lx-N16,ly-12,lfo-top_right,pa-12_14_12_14,r-6,l-end/et00473415-xrzeuwbzms-portrait.jpg"
+                                class="img-fluid rounded-3">
+                                 <div class="mt-3 fs-6 fw-bold">OVERSMART GIRI by  Aditya <br/> Gundeti</div>
+                            <div class="text-muted small fs-6">The comedy Threatre: <br/>Hyderabad</div>
+                        </div>
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-TW9uLCA2IEFwciBvbndhcmRz,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00427677-rwfnphwdsn-portrait.jpg"
+                                class="img-fluid rounded-3">
+                               <div class="mt-3 fs-6 fw-bold">Koi Pond Resin Art</div>
+                            <div class="text-muted small fs-6">La Vie En Rose Cafe and Bistro: <br/>Hyderabad</div> 
+                        </div>
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-TW9uLCA2IEFwciBvbndhcmRz,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00362152-mpnavfjdhu-portrait.jpg"
+                                class="img-fluid rounded-3">
+                                <div class="mt-3 fs-6 fw-bold">Mini Canvas Painting</div>
+                            <div class="text-muted small fs-6">LA Vie En Rose Cafe and Bistro: <br/> Hyderabad</div>
+                        </div>
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-VHVlLCAxNCBBcHIgb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00488227-dvxvddtdxg-portrait.jpg"
+                                class="img-fluid rounded-3">
+                                <div class="mt-3 fs-6 fw-bold">Mrp Night-A Live Music<br/>Series Ft Nupur & Joshua</div>
+                            <div class="text-muted small fs-6">Hard Rock Cafe Hitech City
+                                <br>Hyderabad
+                            </div>      
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row row-cols-2 row-cols-md-5 g-4">
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAxOCBBcHI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00493002-mvfsyzkspw-portrait.jpg"
+                                class="img-fluid rounded-3">
+                                <div class="mt-3 fs-6 fw-bold">GLOBAL STARTUPS CLUB<br/> STARTUP NETWORKING...</div>
+                            <div class="text-muted small fs-6">The Headquarters Space Orbit:<br/> Hyderabad                        
+                            </div>
+                        </div>
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAxMiBBcHIgb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00484032-agrzpmchyt-portrait.jpg"
+                                class="img-fluid rounded-3">
+                                <div class="mt-3 fs-6 fw-bold">Kids Beginner Climbing<br/>Workshop</div>
+                            <div class="text-muted small fs-6">Crag Studio:Hyderabad  
+                            </div>
+                        </div>
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAxMSBBcHIgb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00479073-pctjakwetd-portrait.jpg"
+                                class="img-fluid rounded-3">
+                                <div class="mt-3 fs-6 fw-bold">Lippan Art Workshop 
+            
+                                </div>
+                            <div class="text-muted small fs-6">Urban Nemo Cafe and Graden: <br/>Hyderabad
+                            </div>
+                        </div>
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAxMSBBcHI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00493994-wfprwtgswf-portrait.jpg"
+                                class="img-fluid rounded-3">
+                                <div class="mt-3 fs-6 fw-bold">30-Day Children's Theatre & <br/>Film Acting Workshop</div>
+                            <div class="text-muted small fs-6">Nishumbita School of Drama:<br/>Hyderabad
+                            </div>
+                        </div>
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAxOCBBcHI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00492131-dqqruspgwz-portrait.jpg"
+                                class="img-fluid rounded-3">
+                                <div class="mt-3 fs-6 fw-bold">Gluten Free Bakes 
+    
+                                </div>
+                            <div class="text-muted small fs-6">100 Folds Academy:<br/> Hyderabad        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#popularCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#popularCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+    <div class="container-fluid px-5 my-5">
+        <div class="row align-items-center mb-3">
+            <div class="col-6">
+                <h4 class="mb-0">The Latest Plays</h4>
+            </div>
+            <div class="col-6 text-end">
+                <a href="#" class="text-danger text-decoration-none">See All &gt;</a>
+            </div>
+        </div>
+        <div id="latestCarousel" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row row-cols-2 row-cols-md-5 g-4"">
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAxMSBBcHIgb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00440114-vpvjbcpujx-portrait.jpg"
+                                class="img-fluid rounded-3">
+                            <div class="mt-3 fs-6 fw-bold">Nayi Dosti</div>
+                            <div class="text-muted small fs-6">English
+                                </div>
+                        </div>
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAxMSBKdWw%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00494010-ezxrzgxtac-portrait.jpg"
+                                class="img-fluid rounded-3">
+                                 <div class="mt-3 fs-6 fw-bold">Parboni-2026 Natyostav
+                                 </div>
+                            <div class="text-muted small fs-6">Bengali
+                            </div>
+                        </div>
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCA5IE1heQ%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00490625-cldnspddms-portrait.jpg"
+                                class="img-fluid rounded-3">
+                               <div class="mt-3 fs-6 fw-bold">Ufff...Yellam Sari Agidum
+                               </div>
+                            <div class="text-muted small fs-6">Tamil</div> 
+                        </div>
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-RnJpLCAxNyBBcHI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00494045-ktvaeqcdts-portrait.jpg"
+                                class="img-fluid rounded-3">
+                                <div class="mt-3 fs-6 fw-bold">If Lanterns Could Talk!</div>
+                        </div>
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAxMiBBcHI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00341755-tucxaagjma-portrait.jpg"
+                                class="img-fluid rounded-3">
+                                <div class="mt-3 fs-6 fw-bold">Taj Mahal Ka Tender                            
+                                </div>
+                            <div class="text-muted small fs-6">Hindi
+                            </div>      
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row row-cols-2 row-cols-md-5 g-4">
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAxMSBBcHIgb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00444287-wqsvvrljbj-portrait.jpg" class="img-fluid rounded-3">
+                                <div class="mt-3 fs-6 fw-bold">Speed Friending Meetup</div>
+                        </div>
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAxOCBBcHI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00492307-lgdmhekzpp-portrait.jpg"
+                                class="img-fluid rounded-3">
+                                <div class="mt-3 fs-6 fw-bold">Sitayan</div>
+                            <div class="text-muted small fs-6">English</div>
+                        </div>
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAyNSBBcHI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00492821-shctuwvbbb-portrait.jpg"
+                                class="img-fluid rounded-3">
+                                <div class="mt-3 fs-6 fw-bold">DEAR ZINDAGI </div>
+                            <div class="text-muted small fs-6">Hindi/Marathi </div>
+                        </div>
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAxOCBBcHIgb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00493910-yezybwxfjp-portrait.jpg"
+                             class="img-fluid rounded-3">
+                              <div class="mt-3 fs-6 fw-bold">'Lash't Wish</div>
+                            <div class="text-muted small fs-6">Hindi</div>                   
+                        </div>
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAyIE1heQ%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00490764-yqgygxwfeh-portrait.jpg"
+                                class="img-fluid rounded-3">
+                                <div class="mt-3 fs-6 fw-bold">Marriage Material by Helly
+                                    <br>Shah-Storytelling
+                                </div>
+                            <div class="text-muted small fs-6">Hinglish/English/ Hindi        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#latestCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#latestCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+    <div class="container-fluid px-5 my-5">
+        <div class="row align-items-center mb-3">
+            <div class="col-6">
+                <h4 class="mb-0">Top Games & Sport Events</h4>
+            </div>
+            <div class="col-6 text-end">
+                <a href="#" class="text-danger text-decoration-none">See All &gt;</a>
+            </div>
+        </div>
+        <div id="sportsCarousel" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row row-cols-2 row-cols-md-5 g-4"">
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAyNCBNYXk%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00491693-vlbdgaykbq-portrait.jpg"
+                                class="img-fluid rounded-3">
+                            <div class="mt-3 fs-6 fw-bold">Hyderabad City Slam-10K <br>Summer Run 2026</div>
+                            <div class="text-muted small fs-6">Necklace Road:Hyderabad
+                                </div>
+                        </div>
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAxMiBBcHI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00460781-kfcpexfkrs-portrait.jpg"
+                                class="img-fluid rounded-3">
+                                 <div class="mt-3 fs-6 fw-bold">SMAAASH Chess Master <br>Hyderabad
+                                 </div>
+                            <div class="text-muted small fs-6">Smaaash,(Nexus) Forum Mall: <br>Hyderabad
+                            </div>
+                        </div>
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAyNSBBcHI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00490250-bgvwlmguph-portrait.jpg"
+                                class="img-fluid rounded-3">
+                               <div class="mt-3 fs-6 fw-bold">Battle ground
+                               </div>
+                            <div class="text-muted small fs-6">Rajiv Gandhi International <br><Airport:Hyderabad></Airport:Hyderabad></div> 
+                        </div>
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAxMCBNYXk%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00492146-ytmdcjnpdt-portrait.jpg"
+                                class="img-fluid rounded-3">
+                                <div class="mt-3 fs-6 fw-bold">NTR TRUST THALASSEMIA <br>RUN</div>
+                            <div class="text-muted small fs-6">Jalavihar Water Park: <br>Hyderabad</div> 
+                        </div>
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAyIE1heSBvbndhcmRz,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00494040-dlzmmuuefy-portrait.jpg"
+                                class="img-fluid rounded-3">
+                                <div class="mt-3 fs-6 fw-bold">Badminton Fun Event                          
+                                </div>
+                            <div class="text-muted small fs-6">Highveld lions badminton <br>courts:Hyderabad
+                            </div>      
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row row-cols-2 row-cols-md-5 g-4">
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAxMCBNYXk%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00492146-ytmdcjnpdt-portrait.jpg"class="img-fluid rounded-3">
+                                <div class="mt-3 fs-6 fw-bold">NTR TRUST THALASSEMIA <br>RUN</div> 
+                                <div class="text-muted small fs-6">Jalavihar Water Park: <br>Hyderabad</div>
+                        </div>
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAyIE1heSBvbndhcmRz,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00494040-dlzmmuuefy-portrait.jpg"
+                                class="img-fluid rounded-3">
+                                <div class="mt-3 fs-6 fw-bold">Badminton Fun Event  </div>
+                            <div class="text-muted small fs-6">Highveld lions badminton <br>courts:Hyderabad</div>
+                        </div>
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-TW9uLCA2IEFwciBvbndhcmRz,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end:l-image,i-discovery-catalog@@icons@@bundle-icon-shadow-4x.png,lx-15,ly-15,w-50,l-end:l-image,i-discovery-catalog@@icons@@tournament_tag.png,t-false,lfo-top_right,w-180,l-end/et00491491-jwkcxpnfsa-portrait.jpg"
+                                class="img-fluid rounded-3">
+                                <div class="mt-3 fs-6 fw-bold">TATA IPL 2026 </div>
+                            <div class="text-muted small fs-6">Multiple Venues</div>
+                        </div>
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-VHVlLCA1IE1heQ%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00487724-mqsdvhrafv-portrait.jpg"
+                             class="img-fluid rounded-3">
+                              <div class="mt-3 fs-6 fw-bold">Mumbai City FC vs East <br>Bengal FC</div>
+                            <div class="text-muted small fs-6">Mumbai Football Arena: <br>Mumbai</div>                   
+                        </div>
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAyNiBBcHI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00458588-wtpqvaphml-portrait.jpg"
+                                class="img-fluid rounded-3">
+                                <div class="mt-3 fs-6 fw-bold">ENABLETHON 2025 3rd
+                                    <br>Edition
+                                </div>
+                            <div class="text-muted small fs-6">Gachibowli Stadium Hyderabad      
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#sportsCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#sportsCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+    <div class="container-fluid px-5 my-5">
+        <div class="row align-items-center mb-3">
+            <div class="col-6">
+                <h4 class="mb-0">Explore Fun Activities</h4>
+            </div>
+            <div class="col-6 text-end">
+                <a href="#" class="text-danger text-decoration-none">See All &gt;</a>
+            </div>
+        </div>
+        <div id="funCarousel" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row row-cols-2 row-cols-md-5 g-4">
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-TW9uLCA2IEFwciBvbndhcmRz,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end:l-text,ie-UFJPTU9URUQ%3D,co-FFFFFF,bg-DC354B,ff-Roboto,fs-20,lx-N16,ly-12,lfo-top_right,pa-12_14_12_14,r-6,l-end/et00343461-nkbrwupxrv-portrait.jpg"
+                                class="img-fluid rounded-3">
+                            <div class="mt-3 fs-6 fw-bold">Snow Kingdom Hyderabad </div>
+                            <div class="text-muted small fs-6">Snow Kingdom:Hyderabad
+                                </div>
+                        </div>
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-VHVlLCA3IEFwciBvbndhcmRz,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00088164-bysftsmuhq-portrait.jpg"
+                                class="img-fluid rounded-3">
+                                 <div class="mt-3 fs-6 fw-bold">Indian Music Experience <br/> Museum</div>
+                            <div class="text-muted small fs-6">Indian Music Experience: <br/>Bengaluru</div>
+                        </div>
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAxMSBBcHIgb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00488829-cjftjrsqlg-portrait.jpg"
+                                class="img-fluid rounded-3">
+                               <div class="mt-3 fs-6 fw-bold">Bollywood Night Get- <br/> Together GlassWings...</div>
+                            <div class="text-muted small fs-6">Venue To Be Announced: <br/>Hyderabad</div> 
+                        </div>
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-TW9uLCA2IEFwciBvbndhcmRz,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00402638-gvusggpgfm-portrait.jpg"
+                                class="img-fluid rounded-3">
+                                <div class="mt-3 fs-6 fw-bold">Jalavihar Water Park<br/>Hyderabad</div>
+                            <div class="text-muted small fs-6">Jalavihar Water Park <br/> Hyderabad</div>
+                        </div>
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAyIE1heQ%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00494143-mwldpfxzmm-portrait.jpg"
+                                class="img-fluid rounded-3">
+                                <div class="mt-3 fs-6 fw-bold">Fake Wedding</div>
+                            <div class="text-muted small fs-6">Grand Lawn,Jalavihar:
+                                <br>Hyderabad
+                            </div>      
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row row-cols-2 row-cols-md-5 g-4">
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-TW9uLCA2IEFwciBvbndhcmRz,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00480304-wxstafrwhd-portrait.jpg"
+                                class="img-fluid rounded-3">
+                                <div class="mt-3 fs-6 fw-bold">Node Zero VR Free Roam<br/> Gaming Arena</div>
+                            <div class="text-muted small fs-6">Node Zero VR Gaming Aerena:<br/> Hyderabad                        
+                            </div>
+                        </div>
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-VHVlLCA3IEFwciBvbndhcmRz,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00401319-mumcytzduz-portrait.jpg"
+                                class="img-fluid rounded-3">
+                                <div class="mt-3 fs-6 fw-bold">Surendrapuri India's First<br/>Mythological Theme Park</div>
+                            <div class="text-muted small fs-6">Surendrapuri Mythological<br/>Theme Park:Hyderabad  
+                            </div>
+                        </div>
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-TW9uLCA2IEFwciBvbndhcmRz,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00433872-psjrwtxwwh-portrait.jpg"
+                                class="img-fluid rounded-3">
+                                <div class="mt-3 fs-6 fw-bold">EXPERIUM 
+            
+                                </div>
+                            <div class="text-muted small fs-6">Experium:Hyderabad
+                            </div>
+                        </div>
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-VHVlLCA3IEFwciBvbndhcmRz,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00403515-qqjsdesckh-portrait.jpg"
+                                class="img-fluid rounded-3">
+                                <div class="mt-3 fs-6 fw-bold">Wild Waters Amusement & <br/>Water Theme Part...</div>
+                            <div class="text-muted small fs-6">Wild Waters-Water &<br/>Amusement Theme...
+                            </div>
+                        </div>
+                        <div class="col">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-VHVlLCA3IEFwciBvbndhcmRz,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00491952-klefvuetsl-portrait.jpg"
+                                class="img-fluid rounded-3">
+                                <div class="mt-3 fs-6 fw-bold">Sim & Sams Party & <br/> Playtown - Rs 500 for 2...
+    
+                                </div>
+                            <div class="text-muted small fs-6">Sim and Sam's Party and<br/> Playtown:Bandlaguda        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#funCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#funCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
